@@ -5,7 +5,7 @@ Ko tas varētu nozīmēt?
 ## Introverts
 ![Puika mežā](img/pic1.jpg)
 “Tīrus” introvertus vai ekstravertus ir grūti sastapt, jo parasti cilvēki apvieno sevī abus šos raksturu tipus.
-Kāds ir introverts cilvēks
+### Kāds ir introverts cilvēks
 
 Introverti ne vienmēr ir noslēgti sevī. Vienkārši viņi ir ieciklējušies paši uz sevi. Šādi cilvēki ir ļoti labi klausītāji, bet sarunas uzturēšana viņiem sagādā problēmas. Pēc ballītes introverts iet mājās un priecājas, ka tā ir beigusies. Ar citiem cilvēkiem introverti iepazīstas grūtāk un retāk, arī attiecības parasti ir smagākas.
 
