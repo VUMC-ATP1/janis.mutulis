@@ -78,13 +78,13 @@ public class LoopHomeWork {
         System.out.println("Faktoriālais skailis no " + num1 + " ir " + fact);
 
         //6. uzdevums
-        final int pin = 6789;
+        final int  VARIABLE_NAME = 6789;
         int tries;
         for (tries = 1; tries < 4; tries++) {
             System.out.println("Ievadiet PIN");
             Scanner input3  = new Scanner(System.in);
             int enteredPin = input3.nextInt();
-            if (enteredPin == pin) {
+            if (enteredPin == VARIABLE_NAME) {
                 System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ");
                 break;
             } else if (tries == 3) {
