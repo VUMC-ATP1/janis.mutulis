@@ -1,36 +1,49 @@
 package homework.oop_homework;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class Visit {
-    double productBuyAmount;
-    double servicesBuyAmmount;
-    Customer customer = new Customer();
+    Customer customer;
+    LocalDate date;
+    double serviceExpense;
+    double productExpense;
 
-    public Visit(double productBuyAmount, double servicesBuyAmmount) {
-        this.productBuyAmount = productBuyAmount;
-        this.servicesBuyAmmount = servicesBuyAmmount;
+    public Visit(String name, LocalDate date) {
+        name = customer.getName();
+        date = LocalDate.now();
+    }
+    public String getName(){
+    return customer.getName();
+    }
+    public double getServiceExpense(){
+        DiscountRate serviceExpanseDiscountRate = new DiscountRate();
+       return serviceExpense * serviceExpanseDiscountRate.getServiceDiscountRate(customer.getName());
+    }
+    public double setServiceExpense(double ex){
+        serviceExpense = ex;
+        return serviceExpense;
+    }
+    public double getProductExpense(){
+        DiscountRate productExpanseDiscountRate = new DiscountRate();
+        return serviceExpense * productExpanseDiscountRate.getServiceDiscountRate(customer.getName());
+    }
+    public double setProductExpense(double ex){
+        productExpense = ex;
+        return productExpense;
+    }
+    public double getTotalExpense(){
+        return serviceExpense + productExpense;
     }
 
-    public Visit() {
-    }
-
-    public double getProductBuyAmount() {
-        return productBuyAmount;
-    }
-
-    public void setProductBuyAmount(double productBuyAmount) {
-        this.productBuyAmount = productBuyAmount;
-    }
-
-    public double getServicesBuyAmmount() {
-        return servicesBuyAmmount;
-    }
-
-    public void setServicesBuyAmmount(double servicesBuyAmmount) {
-        this.servicesBuyAmmount = servicesBuyAmmount;
-    }
-    public double getAmountAfterDiscount() {
-
-       // ????? return (productBuyAmount - (productBuyAmount / 100 * 10)) + (servicesBuyAmmount - (productBuyAmount / 100 * customer.discountRate));
-        return 0;
+    @Override
+    public String toString() {
+        return "Visit{" +
+                "customer=" + customer +
+                ", date=" + date +
+                ", serviceExpense=" + serviceExpense +
+                ", productExpense=" + productExpense +
+                '}';
     }
 }
+
